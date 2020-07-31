@@ -8,6 +8,9 @@ a{
     text-decoration: none !important;
    
 }
-
+.jumbotron h1{
+    background-image: url('../images/WoodFiredPizza-350x270.jpg');
+    height: 30vh;
+}
     
     
