@@ -10,7 +10,7 @@
     <script src="./js/scripts.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="jumbotron bg-danger">
             <img src="./images/Piza-lovers.png">
             <div class="na-bar text-right pt-4">
@@ -21,8 +21,10 @@
             </ul>
         </div>
         </div>
+        <div class="card bg-success">
         <form name="all-list">
             <label>Quantity<input type="number"/label>
+                <div class="pizzasize">
             <label>Pizza size
                 <select>
                     <option value="1">Small</option>
@@ -30,6 +32,7 @@
                     <option value="3">large</option>
                 </select>
             </label>
+        </div>
             <label>Crust type
                 <select>
                     <option value="1">Crispy</option>
@@ -37,6 +40,7 @@
                     <option value="3">Gluten-free</option>
                 </select>
                  </label>
+                 <div class="toppings">
                  <label>Toppings 
                      <select>
                  <option value="1">Ice-cream</option>
@@ -45,112 +49,75 @@
                  <option value="4">Extra cheese</option>
                 </select>
                  </label>
+                </div>
             </form>
+    
             <div class="buttons">
-            <button id="addtocart-btn">Add to cart</button>
-            <button id="viewcart-btn">View Cart</button>
-            <button id="buy-btn">Buy</button>
+            <button id="buy-btn bg-info">Purchase</button>
         </div>
-        <div id="cart">
-            <button id="close-btn">Close</button>
-        </div>
-        <h2>CART</h2>
-        <table>
-            <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Remove</th>
-            </tr>
-            <tr>
-                <td><img src="" /></td>
-                <td>Name</td>
-                <td><input type="number" class="qnty"></td>
-                <td>KES <span>0</span>.00</td>
-                <td><button class="remove">X</td>
-            </tr>
-            <tr>
-                <td><img src="" /></td>
-                <td>Name</td>
-                <td><input type="number" class="qnty"></td>
-                <td>KES <span>0</span>.00</td>
-                <td><button class="remove">X</td>
-            </tr>
-            <tr>
-                <td><img src="" /></td>
-                <td>Name</td>
-                <td><input type="number" class="qnty"></td>
-                <td>KES <span>0</span>.00</td>
-                <td><button class="remove">X</td>
-            </tr>
-            <tr>
-                <td><img src="" /></td>
-                <td>Name</td>
-                <td><input type="number" class="qnty"></td>
-                <td>KES <span>0</span>.00</td>
-                <td><button class="remove">X</td>
-            </tr>
-        </table>
+    </div>
         <div class="jumbotron bg-warning">
             <h1>The perfect lover is one who turns into a pizza at 4:00 A.M.
             </h1>
         </div>
-        <div class="typesofpizza bg-info">
+        <div class="typesofpizza bg-warning">
         <div class="row">
             <div class="col-md-3">
             <h4>Marinara</h4>
             <img src="./images/Marinara.jpg" height="180em">
             <h6>price:Ksh 1800</h6>
-            <button>customize</button>
+            <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Capricciosa</h4>
             <img src="./images/Capricciosa.jpg" height="180em">
             <h6>price:Ksh 2800</h6>
-            <button>customize</button>
+            <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Margherita</h4>
             <img src="./images/margherita.jpeg" height="170em">
-            <h6>price:Ksh 2000</h6>
-            <button>customize</button>
+            <h6>price:Ksh 2050</h6>
+            <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Neapolitan</h4>
-            <img src="./images/Neapolitan.jpg" height="170em">
-            <h6>price:Ksh 1800</h6>
-            <button>customize</button>
+            <img src="./images/Neapolitan.jpg" height="170em" width="250em">
+            <h6>price:Ksh 1950</h6>
+            <button>Purchase</button>
         </div>
        
         <div class="row">
             <div class="col-md-3">
                 <h4>Pugliese</h4>
-                <img src="./images/pugliese.jpg" height="180em">
-                <h6>price:Ksh 1800</h6>
-                <button>customize</button>
+                <img src="./images/pugliese.jpg" height="195em" width="275em" >
+                <h6>price:Ksh 2200</h6>
+                <button>Purchase</button>
             </div>
         </div>
         <div class="col-md-3">
             <h4>pizza-quattro</h4>
             <img src="./images/pizza-quattro.jpg" height="190em" width="250em" >
-            <h6>price:Ksh 1800</h6>
-            <button>customize</button>
+            <h6>price:Ksh 1400</h6>
+            <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Taglio</h4>
             <img src="./images/taglio.jpeg" height="190em"  width="250em">
             <h6>price:Ksh 1800</h6>
-            <button>customize</button>
+            <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Sicilian</h4>
-            <img src="./images/sicilian.png" height="170em">
+            <img src="./images/sicilian.png" height="170em" width="240em">
             <h6>price:Ksh 1200</h6>
-            <button>customize</button>
+            <button>Purchase</button>
         </div>
+    </div>        
     </div>
-        
+    <div class="footer">
+
+    </div>
     </div>
 </body>
 </html>

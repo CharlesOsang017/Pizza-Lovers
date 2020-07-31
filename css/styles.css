@@ -12,8 +12,6 @@ a{
     background-image: url('../images/WoodFiredPizza-350x270.jpg');
     height: 30vh;
 }
-.typesofpizza{
-    background-image: url("");
+#cart{
+    text-align: center;
 }
-    
-    
