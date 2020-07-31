@@ -1,0 +1,13 @@
+ul a li{
+    list-style: none;
+    text-align: end;
+    margin: 2em;
+    display: inline-block;
+}
+a{
+    text-decoration: none !important;
+   
+}
+
+    
+    
