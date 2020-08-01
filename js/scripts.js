@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.purchase-btn').click(function(){
-     $('.quantity').toggle();
+    $('#here').click(function(){
+        $('.about-section').show(3000);
+        $('.text').hide();
     });
 });

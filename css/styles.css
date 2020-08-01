@@ -67,3 +67,11 @@ a {
 .quantity{
   display: none;
 }
+.about-section{
+  display: none;
+}
+#here{
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
