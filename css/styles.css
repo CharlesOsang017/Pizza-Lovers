@@ -1,17 +1,61 @@
-ul a li{
-    list-style: none;
-    text-align: end;
-    margin: 2em;
-    display: inline-block;
+ul a li {
+  list-style: none;
+  text-align: end;
+  margin: 2em;
+  display: inline-block;
 }
-a{
-    text-decoration: none !important;
-   
+a {
+  text-decoration: none !important;
 }
-.jumbotron h1{
-    background-image: url('../images/WoodFiredPizza-350x270.jpg');
-    height: 30vh;
+.jumbotron h1 {
+  background-image: url("../images/WoodFiredPizza-350x270.jpg");
+  height: 30vh;
 }
-#cart{
+.about-section, .typesofpizza {
+  display: none;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .contact {
+      background-image: url("../assets/backgrounds/c_image.jpg");
+      text-align: center;
+      height: 28em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 2%;
+      color: white;
+  }
+
+.inputs  {
+    display: flex;
+   }
+   #name, #email, #text{
+   background-color: transparent;
+   margin: 20px;
+   }
+   ::placeholder{
+   color:  white;
+   margin: 20px;
+   }
+
+#email, #name{
+    width: 35vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: transparent;
+    border: solid 1px white;
+}
+.submit{
+    width: 10%;
     text-align: center;
 }
+.contact{
+    display: none;
+}
+  

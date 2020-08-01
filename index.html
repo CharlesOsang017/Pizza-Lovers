@@ -15,9 +15,9 @@
             <img src="./images/Piza-lovers.png">
             <div class="na-bar text-right pt-4">
             <ul>
-               <a href="#"> <li>Sign up</li></a>
-               <a href="#"> <li>Log in </li></a>
-                <a href="#"><li>Contact us</li></a>
+               <a href="#"> <li id="shop">Shop</li></a>
+               <a href="#"> <li id="about">About Us</li></a>
+                <a href="#"><li id="contact">Contact us</li></a>
             </ul>
         </div>
         </div>
@@ -55,6 +55,38 @@
             <div class="buttons">
             <button id="buy-btn bg-info">Purchase</button>
         </div>
+        <div class="container">
+            <h3>Provide your address below</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <form id="new-contact">
+                  <div class="form-group">
+                    <label for="new-first-name">First name</label>
+                    <input type="text" class="form-control" id="new-first-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="new-last-name">Last name</label>
+                    <input type="text" class="form-control" id="new-last-name" />
+                  </div>
+                  <div id="new-addresses">
+                    <div class="new-address">
+                      <div class="form-group">
+                        <label for="new-street">Street</label>
+                        <input type="text" class="form-control new-street" />
+                      </div>
+                      <div class="form-group">
+                        <label for="new-city">City</label>
+                        <input type="text" class="form-control new-city" />
+                      </div>
+                      <div class="form-group">
+                        <label for="new-county">County</label>
+                        <input type="text" class="form-control new-county" />
+                        <button id="sub-btn">Submitt</button>
+                      </div>
+                    </div>
+                  </div>
+    </div>
+    </div>
     </div>
         <div class="jumbotron bg-warning">
             <h1>The perfect lover is one who turns into a pizza at 4:00 A.M.
@@ -65,25 +97,25 @@
             <div class="col-md-3">
             <h4>Marinara</h4>
             <img src="./images/Marinara.jpg" height="180em">
-            <h6>price:Ksh 1800</h6>
+            <h6>Cash:Ksh 1800</h6>
             <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Capricciosa</h4>
             <img src="./images/Capricciosa.jpg" height="180em">
-            <h6>price:Ksh 2800</h6>
+            <h6>Cash:Ksh 2800</h6>
             <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Margherita</h4>
             <img src="./images/margherita.jpeg" height="170em">
-            <h6>price:Ksh 2050</h6>
+            <h6>Cash:Ksh 2050</h6>
             <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Neapolitan</h4>
             <img src="./images/Neapolitan.jpg" height="170em" width="250em">
-            <h6>price:Ksh 1950</h6>
+            <h6>Cash:Ksh 1950</h6>
             <button>Purchase</button>
         </div>
        
@@ -91,26 +123,26 @@
             <div class="col-md-3">
                 <h4>Pugliese</h4>
                 <img src="./images/pugliese.jpg" height="195em" width="275em" >
-                <h6>price:Ksh 2200</h6>
+                <h6>Cash:Ksh 2200</h6>
                 <button>Purchase</button>
             </div>
         </div>
         <div class="col-md-3">
             <h4>pizza-quattro</h4>
             <img src="./images/pizza-quattro.jpg" height="190em" width="250em" >
-            <h6>price:Ksh 1400</h6>
+            <h6>Cash:Ksh 1400</h6>
             <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Taglio</h4>
             <img src="./images/taglio.jpeg" height="190em"  width="250em">
-            <h6>price:Ksh 1800</h6>
+            <h6>Cash:Ksh 1800</h6>
             <button>Purchase</button>
         </div>
         <div class="col-md-3">
             <h4>Sicilian</h4>
             <img src="./images/sicilian.png" height="170em" width="240em">
-            <h6>price:Ksh 1200</h6>
+            <h6>Cash:Ksh 1200</h6>
             <button>Purchase</button>
         </div>
     </div>        
@@ -161,6 +193,19 @@
     </div>
   </div>
     </div>
+    <div class="contact">
+        <div class="container-fluid">
+        <h1>CONTACT US</h1>
+        <form action="http://eepurl.com/g_j_qb" id="forms" method="POST">
+           <div class="inputs">
+              <input type="text" id="name" placeholder="Name.."><br>
+              <input type="text" id="email" placeholder="Email..">
+           </div>
+           <textarea id="text" placeholder="Your message here..."></textarea>
+           <input type="submit" class="submit bg-success" onclick="myFunctions()" value="Submit">
+        </form>
+     </div>
+     </div>
 </div>
 </body>
 </html>

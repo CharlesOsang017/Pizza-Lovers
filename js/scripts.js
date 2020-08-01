@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $('#about').click(function(){
+        $('.about-section').toggle();
+    });
+    $('#shop').click(function(){
+        $('.typesofpizza').toggle();
+    });
+    $('#contact').click(function(){
+        $('.contact').toggle();
+    })
+});
