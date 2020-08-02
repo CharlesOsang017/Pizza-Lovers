@@ -14,7 +14,7 @@
 
 <body>
   <div class="jumbotron bg-danger">
-    <img src="./images/Piza-lovers.png" height="100" width="auto">
+    <img src="./images/Piza-lovers.png" height="150" width="auto">
     <div class="nav-bar text-right pt-4">
       <ul>
         <a href="#">
@@ -257,10 +257,10 @@
         <div class="quantity">
           <div class="card bg-success text-center">
             <form name="all-list" method="post" action="" id="form1">
-              <label>Quantity<input type="number" id="Neapolitanquantity"></label>
+              <label>Quantity<input type="number" id="pizza-quattroquantity"></label>
               <div class="pizzasize">
                 <label>Pizza size
-                  <select name="Neapolitansize" id="Neapolitansize">
+                  <select name="pizza-quattrosize" id="pizza-quattrosize">
                     <option value="200">Small</option>
                     <option value="300">medium</option>
                     <option value="450">large</option>
@@ -268,7 +268,7 @@
                 </label>
               </div>
               <label>Crust type
-                <select name="Neapolitantype" id="Neapolitantype">
+                <select name="pizza-quattrotype" id="pizza-quattrotype">
                   <option value="100">Crispy</option>
                   <option value="250">Stuffed</option>
                   <option value="350">Gluten-free</option>
@@ -276,14 +276,14 @@
               </label>
               <div class="toppings">
                 <label>Toppingsa
-                  <select name="Neapolitantopping" id="Neapolitantopping">
+                  <select name="pizza-quattrotopping" id="pizza-quattrotopping">
                     <option value="150">Ice-cream</option>
                     <option value="180">Mushrooms</option>
                     <option value="200">Bacon</option>
                     <option value="250">Extra cheese</option>
                   </select>
                   <div class="purchase-btn"
-                    onclick="getTotal(document.getElementById('Neapolitanquantity'), document.getElementById('Neapolitansize'), document.getElementById('Neapolitantype'), document.getElementById('Neapolitantopping'))">
+                    onclick="getTotal(document.getElementById('pizza-quattroquantity'), document.getElementById('pizza-quattrosize'), document.getElementById('pizza-quattrotype'), document.getElementById('pizza-quattrotopping'))">
                     <button>Purchase</button>
                   </div>
                 </label>
@@ -441,7 +441,12 @@
         </form>
       </div>
     </div>
-
+<div class="footer text-center bg-success ">
+  <img src="./images/skype.png">
+  <img src="./images/twitter.png">
+  <img src="./images/you_tube.png">
+  <img src="./images/behance.png">
+  <h6>Pizza lovers, Copyrite(c) 2020</h6>
+</div>
 </body>
-
 </html>
