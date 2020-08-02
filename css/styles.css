@@ -58,11 +58,16 @@ a {
   width: 10%;
   text-align: center;
 }
-.about-section{
+.about-section {
   display: none;
 }
-#here{
+#here {
   color: blue;
   cursor: pointer;
   text-decoration: underline;
 }
+.marina-selection{
+  display: flex;
+  justify-content: center;
+}
+
