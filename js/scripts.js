@@ -5,6 +5,10 @@ $(document).ready(function () {
   });
 });
 
+function getTotal(q, s, ct,t){
+  alert(' Your grand Total is ksh ' + parseFloat(q.value)*(parseFloat(s.value)+parseFloat(ct.value)+parseFloat(t.value)));
+}
+
 function theForms() {
   var name = document.forms["forms"].elements[0].value;
   var email = document.forms["forms"].elements[1].value;
@@ -27,9 +31,3 @@ function theForms() {
   }
 }
 
-var form1 = document.getElementById('form-1')
-console.log(form1);
-
-function getTotal(q, s, ct,t){
-    alert(parseFloat(q.value)*(parseFloat(s.value)+parseFloat(ct.value)+parseFloat(t.value)));
-}

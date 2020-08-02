@@ -1,291 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza-lovers</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./js/jquery-3.5.1.js"></script>
-    <script src="./js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza-lovers</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/scripts.js"></script>
 </head>
+
 <body>
-  <div class="container">
-        <div class="jumbotron bg-danger">
-          <img src="./images/Piza-lovers.png" height="100" width="auto">
-          <div class="nav-bar text-right pt-4">
-           <ul>
-              <a href="#"> <li>Shop</li></a>
-              <a href="#"> <li id="about">About Us</li></a>
-                <a href="#"><li>Contact us</li></a>
-            </ul>
-          </div>
-        </div>
-                <div class="quantity">
-        <div class="card bg-success text-center">
-        <form name="all-list" method="post" action="" id="form1">
-          <label>Quantity<input type="number"/label>
-                <div class="pizzasize">
-            <label>Pizza size
-                <select>
-                    <option value="1">Small</option>
-                    <option value="2">medium</option>
-                    <option value="3">large</option>
-                </select>
-            </label>
-        </div>
-         <label>Crust type
-                <select>
-                 <option value="1">Crispy</option>
-              <option value="2">Stuffed</option>
-            <option value="3">Gluten-free</option>
-         </select>
-       </label>
-                  <div class="toppings">
-                 <label>Toppings 
-              <select>
-             <option value="1">Ice-cream</option>
-            <option value="2">Mushrooms</option>
-          <option value="3">Bacon</option>
-        <option value="4">Extra cheese</option>
-       </select>
-       <div class="purchase-btn">
-        <button>Purchase</button>  
-    </div>
-     </label>
-    
-</div>
-</div>
-</div>
- </form> 
-        <div class="jumbotron bg-warning">
-            <h1>The perfect lover is one who turns into a pizza at 4:00 A.M.
-            </h1>
-        </div> 
-        <div class="typesofpizza bg-warning">
-        <div class="row">
-            ]<div class="col-md-3">
-            <h4>Marinara</h4>
-            <img src="./images/Marinara.jpg" height="180em">
-            <div class="quantity">
-              <div class="card bg-success text-center">
-              <form name="all-list" method="post" action="" id="form1">
-                <label>Quantity<input type="number" id="marinaraquantity"></label>
-                      <div class="pizzasize">
-                  <label>Pizza size
-                      <select name="marinarasize" id="marinarasize">
-                          <option value="200">Small</option>
-                          <option value="300">medium</option>
-                          <option value="450">large</option>
-                      </select>
-                  </label>
-              </div>
-               <label>Crust type
-                      <select name="marinaratype" id="marinaratype"> 
-                       <option value="100">Crispy</option>
-                    <option value="250">Stuffed</option>
-                  <option value="350">Gluten-free</option>
-               </select>
-             </label>
-                        <div class="toppings">
-                       <label>Toppings 
-                    <select name="marinaratopping" id="marinaratopping">
-                   <option value="150">Ice-cream</option>
-                  <option value="180">Mushrooms</option>
-                <option value="200">Bacon</option>
-              <option value="250">Extra cheese</option>
-             </select>
-             <div class="purchase-btn" onclick="getTotal(document.getElementById('marinaraquantity'), document.getElementById('marinarasize'), document.getElementById('marinaratype'), document.getElementById('marinaratopping'))"> 
-              <button>Purchase</button>  
-          </div>
-           </label>
-          
-      </div>
-      </div>
-      </div>
-       </form> 
-            <h6>Cash:Ksh 1800</h6>
-            <button class="purchase-btn">Purchase</button>
-        </div>
-        <div class="col-md-3">
-            <h4>Capricciosa</h4>
-            <img src="./images/Capricciosa.jpg" height="180em">
-            <div class="quantity">
-              <div class="card bg-success text-center">
-              <form name="all-list" method="post" action="" id="form1">
-                <label>Quantity<input type="number"/label>
-                      <div class="pizzasize">
-                  <label>Pizza size
-                      <select>
-                          <option value="1">Small</option>
-                          <option value="2">medium</option>
-                          <option value="3">large</option>
-                      </select>
-                  </label>
-              </div>
-               <label>Crust type
-                      <select>
-                       <option value="1">Crispy</option>
-                    <option value="2">Stuffed</option>
-                  <option value="3">Gluten-free</option>
-               </select>
-             </label>
-                        <div class="toppings">
-                       <label>Toppings 
-                    <select>
-                   <option value="1">Ice-cream</option>
-                  <option value="2">Mushrooms</option>
-                <option value="3">Bacon</option>
-              <option value="4">Extra cheese</option>
-             </select>
-             <div class="purchase-btn">
-              <button >Purchase</button>  
-          </div>
-           </label>
-          
-      </div>
-      </div>
-      </div>
-       </form> 
-            <h6>Cash:Ksh 2800</h6>
-            <button class="purchase-btn">Purchase</button>
-        </div>
-        <div class="col-md-3">
-            <h4>Margherita</h4>
-            <img src="./images/margherita.jpeg" height="170em">
-            <div class="quantity">
-              <div class="card bg-success text-center">
-              <form name="all-list" method="post" action="" id="form1">
-                <label>Quantity<input type="number"/label>
-                      <div class="pizzasize">
-                  <label>Pizza size
-                      <select>
-                          <option value="1">Small</option>
-                          <option value="2">medium</option>
-                          <option value="3">large</option>
-                      </select>
-                  </label>
-              </div>
-               <label>Crust type
-                      <select>
-                       <option value="1">Crispy</option>
-                    <option value="2">Stuffed</option>
-                  <option value="3">Gluten-free</option>
-               </select>
-             </label>
-                        <div class="toppings">
-                       <label>Toppings 
-                    <select>
-                   <option value="1">Ice-cream</option>
-                  <option value="2">Mushrooms</option>
-                <option value="3">Bacon</option>
-              <option value="4">Extra cheese</option>
-             </select>
-             <div class="purchase-btn">
-              <button>Purchase</button>  
-          </div>
-           </label>
-          
-      </div>
-      </div>
-      </div>
-       </form> 
-            <h6>Cash:Ksh 2050</h6>
-            <button class="purchase-btn">Purchase</button>
-        </div>
-        <!-- <div class="col-md-3">
-            <h4>Neapolitan</h4>
-            <img src="./images/Neapolitan.jpg" height="170em" width="250em">
-            <h6>Cash:Ksh 1950</h6>
-            <button class="purchase-btn">Purchase</button>
-        </div> -->
-        <div class="row">
-            <div class="col-md-3">
-                <h4>Pugliese</h4>
-                <img src="./images/pugliese.jpg" height="195em" width="275em" >
-                <h6>Cash:Ksh 2200</h6>
-                <button class="purchase-btn">Purchase</button>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <h4>pizza-quattro</h4>
-            <img src="./images/pizza-quattro.jpg" height="190em" width="250em" >
-            <h6>Cash:Ksh 1400</h6>
-            <button class="purchase-btn">Purchase</button>
-        </div>
-          <div class="col-md-3">
-            <h4>Taglio</h4>
-            <img src="./images/taglio.jpeg" height="190em"  width="250em">
-            <h6>Cash:Ksh 1800</h6>
-            <button class="purchase-btn">Purchase</button>
-          </div>       
-            <div class="col-md-3">
-            <h4>Sicilian</h4>
-            <img src="./images/sicilian.png" height="170em" width="240em">
-            <h6>Cash:Ksh 1200</h6>
-            <button class="purchase-btn">Purchase</button>
-        </div>
-     
-   </div>  
-   <h4 class="text text-center bg-danger">Click <span id="here">here</span>to see more about us</h4>  
-<div class="about-section text-center bg-success">
-    <h1>About Us</h1>
-    <p>Pizza lovers is a well recognized company due to it's experienced staff</p>
-   <h2>Our Team</h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="" alt=""   height="">
-        <div class="container bg-warning">
-          <h2>Eric Soller </h2>
-          <img src="./images/soler.jpg" alt="" height="250em">
-          <p class="title">CEO & Founder</p>
-          <p>He discovered pizaa lovers in 1997, and the company has become a success</p>
-          <p>ericsoler@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="" alt="" height="">
-        <div class="container bg-warning">
-          <h2>Sarah Rose</h2>
-          <img src="./images/RoseSara.jpg" alt="" height="250em">
-          <p class="title">Art Director</p>
-          <p>She deals with art decoration of the company, especially on the webpage.She has created an impact to this company</p>
-          <p>sarahrose02@gmail.com</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="card">
-        <img src="" alt=""  height="">
-        <div class="container bg-warning">
-          <h2>John Doe</h2>
-          <img src="./images/Doe.png" alt="" height="250em">
-          <p class="title">Designer</p>
-          <p>Deals with the designs of the company,especially the advertisation part</p>
-          <p>johndoe@gmail.com</p>
-        </div>
-      </div>
+  <div class="jumbotron bg-danger">
+    <img src="./images/Piza-lovers.png" height="100" width="auto">
+    <div class="nav-bar text-right pt-4">
+      <ul>
+        <a href="#">
+          <li>Shop</li>
+        </a>
+        <a href="#">
+          <li id="about">About Us</li>
+        </a>
+        <a href="#">
+          <li>Contact us</li>
+        </a>
+      </ul>
     </div>
   </div>
+  <div class="jumbotron bg-warning">
+    <h1>The perfect lover is one who turns into a pizza at 4:00 A.M.
+    </h1>
+  </div>
+  <div class="typesofpizza bg-warning">
+    <div class="row">
+      <div class="col-md-3">
+        <h4>Marinara</h4>
+        <img src="./images/Marinara.jpg" height="180em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="marinaraquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="marinarasize" id="marinarasize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="marinaratype" id="marinaratype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppings
+                  <select name="marinaratopping" id="marinaratopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="return getTotal(document.getElementById('marinaraquantity'), document.getElementById('marinarasize'), document.getElementById('marinaratype'), document.getElementById('marinaratopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 1800</h6>
+      </div>
+      <div class="col-md-3">
+        <h4>Capricciosa</h4>
+        <img src="./images/Capricciosa.jpg" height="180em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="Capricciosaquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="Capricciosasize" id="Capricciosasize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="Capricciosatype" id="Capricciosatype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppings
+                  <select name="Capricciosatopping" id="Capricciosatopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="getTotal(document.getElementById('Capricciosaquantity'), document.getElementById('Capricciosasize'), document.getElementById('Capricciosatype'), document.getElementById('Capricciosatopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 2800</h6>
+      </div>
+      <div class="col-md-3">
+        <h4>Margherita</h4>
+        <img src="./images/margherita.jpeg" height="170em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="Margheritaquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="Margheritasize" id="Margheritasize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="Margheritatype" id="Margheritatype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppings
+                  <select name="Margheritatopping" id="Margheritatopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="getTotal(document.getElementById('Margheritaquantity'), document.getElementById('Margheritasize'), document.getElementById('Margheritatype'), document.getElementById('Margheritatopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 2050</h6>
+      </div>
+      <div class="col-md-3">
+        <h4>Neapolitan</h4>
+        <img src="./images/Neapolitan.jpg" height="170em" width="250em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="Neapolitanquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="Neapolitansize" id="Neapolitansize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="Neapolitantype" id="Neapolitantype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppingsa
+                  <select name="Neapolitantopping" id="Neapolitantopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="getTotal(document.getElementById('Neapolitanquantity'), document.getElementById('Neapolitansize'), document.getElementById('Neapolitantype'), document.getElementById('Neapolitantopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 1950</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h4>Pugliese</h4>
+        <img src="./images/pugliese.jpg" height="195em" width="275em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="Neapolitanquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="Neapolitansize" id="Neapolitansize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="Neapolitantype" id="Neapolitantype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppingsa
+                  <select name="Neapolitantopping" id="Neapolitantopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="getTotal(document.getElementById('Neapolitanquantity'), document.getElementById('Neapolitansize'), document.getElementById('Neapolitantype'), document.getElementById('Neapolitantopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 2200</h6>
+      </div>
+      <div class="col-md-3">
+        <h4>pizza-quattro</h4>
+        <img src="./images/pizza-quattro.jpg" height="190em" width="250em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="Neapolitanquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="Neapolitansize" id="Neapolitansize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="Neapolitantype" id="Neapolitantype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppingsa
+                  <select name="Neapolitantopping" id="Neapolitantopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="getTotal(document.getElementById('Neapolitanquantity'), document.getElementById('Neapolitansize'), document.getElementById('Neapolitantype'), document.getElementById('Neapolitantopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 1400</h6>
+      </div>
+      <div class="col-md-3">
+        <h4>Taglio</h4>
+        <img src="./images/taglio.jpeg" height="190em" width="250em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="Taglioquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="Tagliosize" id="Tagliosize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="Tagliotype" id="Tagliotype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppings
+                  <select name="Tagliotopping" id="Tagliotopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="getTotal(document.getElementById('Taglioquantity'), document.getElementById('Tagliosize'), document.getElementById('Tagliotype'), document.getElementById('Tagliotopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 1800</h6>
+      </div>
+      <div class="col-md-3">
+        <h4>Sicilian</h4>
+        <img src="./images/sicilian.png" height="170em" width="240em">
+        <div class="quantity">
+          <div class="card bg-success text-center">
+            <form name="all-list" method="post" action="" id="form1">
+              <label>Quantity<input type="number" id="Sicilianquantity"></label>
+              <div class="pizzasize">
+                <label>Pizza size
+                  <select name="Siciliansize" id="Siciliansize">
+                    <option value="200">Small</option>
+                    <option value="300">medium</option>
+                    <option value="450">large</option>
+                  </select>
+                </label>
+              </div>
+              <label>Crust type
+                <select name="Siciliantype" id="Siciliantype">
+                  <option value="100">Crispy</option>
+                  <option value="250">Stuffed</option>
+                  <option value="350">Gluten-free</option>
+                </select>
+              </label>
+              <div class="toppings">
+                <label>Toppingsa
+                  <select name="Siciliantopping" id="Siciliantopping">
+                    <option value="150">Ice-cream</option>
+                    <option value="180">Mushrooms</option>
+                    <option value="200">Bacon</option>
+                    <option value="250">Extra cheese</option>
+                  </select>
+                  <div class="purchase-btn"
+                    onclick="getTotal(document.getElementById('Sicilianquantity'), document.getElementById('Siciliansize'), document.getElementById('Siciliantype'), document.getElementById('Siciliantopping'))">
+                    <button>Purchase</button>
+                  </div>
+                </label>
+
+              </div>
+          </div>
+        </div>
+        </form>
+        <h6>Cash:Ksh 1200</h6>
+      </div>
+    </div>
+    <h4 class="text text-center bg-danger">Click <span id="here">here</span>to see more about us</h4>
+    <div class="about-section text-center bg-success">
+      <h1>About Us</h1>
+      <p>Pizza lovers is a well recognized company due to it's experienced staff</p>
+      <h2>Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="" alt="" height="">
+            <div class="container bg-warning">
+              <h2>Eric Soller </h2>
+              <img src="./images/soler.jpg" alt="" height="250em">
+              <p class="title">CEO & Founder</p>
+              <p>He discovered pizaa lovers in 1997, and the company has become a success</p>
+              <p>ericsoler@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="" alt="" height="">
+            <div class="container bg-warning">
+              <h2>Sarah Rose</h2>
+              <img src="./images/RoseSara.jpg" alt="" height="250em">
+              <p class="title">Art Director</p>
+              <p>She deals with art decoration of the company, especially on the webpage.She has created an impact to
+                this company</p>
+              <p>sarahrose02@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="" alt="" height="">
+            <div class="container bg-warning">
+              <h2>John Doe</h2>
+              <img src="./images/Doe.png" alt="" height="250em">
+              <p class="title">Designer</p>
+              <p>Deals with the designs of the company,especially the advertisation part</p>
+              <p>johndoe@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="contact">
-        <div class="container-fluid bg-warning">
+      <div class="container-fluid bg-warning">
         <h1>CONTACT US</h1>
         <form action="http://eepurl.com/g_j_qb" id="forms" method="POST">
-           <div class="inputs">
-              <input type="text" id="name" placeholder="Name.."><br>
-              <input type="text" id="email" placeholder="Email..">
-           </div>
-           <textarea id="text" placeholder="Your message here..."></textarea>
-           <input type="submit" class="submit bg-success" onclick="theForms()"  value="Submit">
+          <div class="inputs">
+            <input type="text" id="name" placeholder="Name.."><br>
+            <input type="text" id="email" placeholder="Email..">
+          </div>
+          <textarea id="text" placeholder="Your message here..."></textarea>
+          <input type="submit" class="submit bg-success" onclick="theForms()" value="Submit">
         </form>
-     </div>
-     </div>
-    
+      </div>
+    </div>
+
 </body>
+
 </html>
