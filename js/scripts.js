@@ -4,9 +4,18 @@ $(document).ready(function () {
     $(".text").hide();
   });
 });
-
+function pizzaPricess(quantity, size, crusttype,toppings){
+this.quantity=q;
+this.size=s;
+this.crusttype=ct;
+this.toppings=t;
+}
 function getTotal(q, s, ct,t){
-  alert(' Your grand Total is ksh ' + parseFloat(q.value)*(parseFloat(s.value)+parseFloat(ct.value)+parseFloat(t.value)));
+  var pizzaPrice = ( parseFloat(q.value)*(parseFloat(s.value)+parseFloat(ct.value)+parseFloat(t.value)));
+  alert(' Your grand Total is ksh ' +  (pizzaPrice));
+  confirm('Do you want your pizza to be delivered to you?')
+  prompt('Provide a location you want it delivered')
+  alert('your order will be delivered to your location in a moment')
 }
 
 function theForms() {
